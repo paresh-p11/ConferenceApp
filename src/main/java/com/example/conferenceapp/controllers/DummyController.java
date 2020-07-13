@@ -19,7 +19,7 @@ public class DummyController {
     PrintWriter printWriter = null;
     File file = new File("/tmp/lcmaudittest.txt");
     try {
-
+// Essentially checks if the api was called. does nothing else.
       printWriter = new PrintWriter(file);
       if (description.isEmpty()) {
         description = "some dummy description from dummy controller !! @ " + System.currentTimeMillis();
